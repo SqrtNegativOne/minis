@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Cognizant",
+    "description": "Bring your routine to the upper levels of consciousness.",
+    "version": "0.0",
+    "action": {
+      "default_icon": "/images/thumbnail.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [ {
+      "js": ["content-script.js"],
+      "matches": ["https://*/*"]
+    } ]
+  }

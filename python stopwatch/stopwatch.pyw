@@ -70,7 +70,6 @@ def message():
 	messageWindow = tk.Toplevel()
 	messages = ['touch grass', 'bitte trinkt wasser']
 	ttk.Label(messageWindow, text=messages[randrange(0,len(messages))]) #bracket spam lesgo
-	# wait how tf do you sleep again
 	messageWindow.after(1000, messageWindow.destroy)
 
 def Kill():
@@ -134,5 +133,4 @@ root.bind('<Button-1>', SaveLastClickPos)
 root.bind('<B1-Motion>', Dragging)
 root.bind('<Enter>', MouseHover)
 root.bind('<Leave>', MouseLeave)
-
 root.mainloop()
